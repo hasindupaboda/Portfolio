@@ -1,0 +1,651 @@
+
+html_content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumith Auto Parts | Premium Auto Parts & Reliable Service</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========================
+         HEADER / NAVIGATION
+    ======================== -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <i class="fas fa-cogs logo-icon"></i>
+                <span class="logo-text">Sumith <span class="logo-accent">Auto Parts</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Hamburger Menu -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========================
+         HERO SECTION
+    ======================== -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle fade-in">Your Trusted Partner</p>
+            <h1 class="hero-title fade-in">
+                Premium Auto Parts<br>
+                <span class="hero-accent">& Reliable Service</span>
+            </h1>
+            <p class="hero-description fade-in">
+                Your trusted partner for quality vehicle parts and accessories. We deliver excellence for every drive.
+            </p>
+            <div class="hero-buttons fade-in">
+                <a href="#products" class="btn btn-primary">
+                    <i class="fas fa-box-open"></i> View Products
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-phone"></i> Contact Us
+                </a>
+            </div>
+        </div>
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down">
+            <a href="#about" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========================
+         ABOUT SECTION
+    ======================== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Who We Are</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- About Text -->
+                <div class="about-content scroll-reveal">
+                    <h3 class="about-heading">Quality Parts, Trusted Service</h3>
+                    <p class="about-text">
+                        Sumith Auto Parts has been a trusted name in the automotive industry for over a decade. 
+                        We specialize in providing genuine, high-quality auto parts and accessories for all vehicle makes and models.
+                    </p>
+                    <p class="about-text">
+                        Our mission is to keep your vehicle running smoothly with parts you can trust. From engine components 
+                        to brake systems, we stock everything you need under one roof.
+                    </p>
+                    <p class="about-text">
+                        With years of experience and a commitment to customer satisfaction, we have built a reputation 
+                        for reliability, affordability, and expert support.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i> Get In Touch
+                    </a>
+                </div>
+
+                <!-- About Image -->
+                <div class="about-image scroll-reveal">
+                    <div class="about-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=500&fit=crop" alt="Auto Parts Workshop" loading="lazy">
+                        <div class="about-badge">
+                            <span class="badge-number">10+</span>
+                            <span class="badge-text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Highlights -->
+            <div class="highlights">
+                <div class="highlight-card scroll-reveal">
+                    <div class="highlight-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h4>Genuine Parts</h4>
+                    <p>Only authentic, manufacturer-approved parts for your vehicle.</p>
+                </div>
+                <div class="highlight-card scroll-reveal">
+                    <div class="highlight-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h4>Affordable Prices</h4>
+                    <p>Competitive pricing without compromising on quality.</p>
+                </div>
+                <div class="highlight-card scroll-reveal">
+                    <div class="highlight-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Expert Support</h4>
+                    <p>Knowledgeable team ready to help you find the right part.</p>
+                </div>
+                <div class="highlight-card scroll-reveal">
+                    <div class="highlight-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h4>Fast Delivery</h4>
+                    <p>Quick and reliable delivery to get you back on the road.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         SERVICES SECTION
+    ======================== -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">What We Offer</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="service-title">Auto Parts Sales</h3>
+                    <p class="service-desc">Wide range of genuine auto parts for all vehicle makes and models at competitive prices.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 class="service-title">Engine Components</h3>
+                    <p class="service-desc">High-quality engine parts including pistons, valves, gaskets, and more for optimal performance.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-circle-notch"></i>
+                    </div>
+                    <h3 class="service-title">Brake Systems</h3>
+                    <p class="service-desc">Complete brake solutions including pads, rotors, calipers, and brake fluid for your safety.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="service-title">Electrical Parts</h3>
+                    <p class="service-desc">Batteries, alternators, starters, sensors, and wiring components for reliable electrical systems.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">Car Accessories</h3>
+                    <p class="service-desc">Interior and exterior accessories to enhance comfort, style, and functionality of your vehicle.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Customer Support</h3>
+                    <p class="service-desc">Dedicated support team to help you find the right parts and answer all your queries.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         PRODUCTS SECTION
+    ======================== -->
+    <section class="products section" id="products">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Our Products</span>
+                <h2 class="section-title">Featured Products</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1: Engine Oil -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=400&h=300&fit=crop" alt="Engine Oil" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="product-btn" onclick="showProductDetails('Engine Oil')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Engine Oil</h3>
+                        <p class="product-desc">Premium synthetic and mineral engine oils for all vehicle types. Ensures smooth engine performance and longevity.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From $25</span>
+                            <button class="btn btn-sm btn-primary" onclick="showProductDetails('Engine Oil')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Brake Pads -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=400&h=300&fit=crop" alt="Brake Pads" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="product-btn" onclick="showProductDetails('Brake Pads')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Brake Pads</h3>
+                        <p class="product-desc">High-performance brake pads designed for maximum stopping power and durability under all conditions.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From $35</span>
+                            <button class="btn btn-sm btn-primary" onclick="showProductDetails('Brake Pads')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Batteries -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1619641421616-55db5d29f7f7?w=400&h=300&fit=crop" alt="Car Battery" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="product-btn" onclick="showProductDetails('Batteries')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Batteries</h3>
+                        <p class="product-desc">Reliable car batteries with long life and consistent power output. Available for all vehicle models.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From $80</span>
+                            <button class="btn btn-sm btn-primary" onclick="showProductDetails('Batteries')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Filters -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop" alt="Air Filter" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="product-btn" onclick="showProductDetails('Filters')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Filters</h3>
+                        <p class="product-desc">Oil, air, and fuel filters to keep your engine clean and running efficiently. OEM quality guaranteed.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From $15</span>
+                            <button class="btn btn-sm btn-primary" onclick="showProductDetails('Filters')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Tires -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop" alt="Car Tires" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="product-btn" onclick="showProductDetails('Tires')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Tires</h3>
+                        <p class="product-desc">All-season, performance, and off-road tires from top brands. Expert fitting services available.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From $60</span>
+                            <button class="btn btn-sm btn-primary" onclick="showProductDetails('Tires')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Headlights -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop" alt="Headlights" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="product-btn" onclick="showProductDetails('Headlights')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Headlights</h3>
+                        <p class="product-desc">LED, HID, and halogen headlights for enhanced visibility and modern styling. DOT approved.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From $45</span>
+                            <button class="btn btn-sm btn-primary" onclick="showProductDetails('Headlights')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         GALLERY SECTION
+    ======================== -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Gallery</span>
+                <h2 class="section-title">Our Workshop</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop" alt="Workshop Interior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=600&h=400&fit=crop" alt="Auto Parts Shelf" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1619641421616-55db5d29f7f7?w=600&h=400&fit=crop" alt="Car Battery Display" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop" alt="Tire Storage" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop" alt="Car Headlights" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=600&h=400&fit=crop" alt="Engine Oil Products" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <img src="" alt="Gallery Image" id="lightboxImage">
+        <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- ========================
+         CONTACT SECTION
+    ======================== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info scroll-reveal">
+                    <h3 class="contact-heading">Let's Connect</h3>
+                    <p class="contact-desc">Have questions or need a quote? Reach out to us through any of the channels below. We're here to help!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+94123456789" class="contact-value">+94 123 456 789</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">WhatsApp</span>
+                                <a href="https://wa.me/94123456789" target="_blank" class="contact-value whatsapp-link">
+                                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:info@sumithautoparts.com" class="contact-value">info@sumithautoparts.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Address</span>
+                                <span class="contact-value">123 Main Street, Colombo, Sri Lanka</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper scroll-reveal">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <h3 class="form-title">Send a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            <span class="error-message" id="nameError">Please enter your name</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <span class="error-message" id="emailError">Please enter a valid email</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                            <span class="error-message" id="messageError">Please enter your message</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="map-container scroll-reveal">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.63215462998!2d79.773803!3d6.927079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Sumith Auto Parts Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FOOTER
+    ======================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <i class="fas fa-cogs"></i>
+                        <span>Sumith <span class="footer-accent">Auto Parts</span></span>
+                    </a>
+                    <p class="footer-desc">Your trusted partner for premium auto parts and reliable service. Quality you can depend on.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Auto Parts Sales</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Engine Components</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Brake Systems</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Electrical Parts</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Car Accessories</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone-alt"></i> +94 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@sumithautoparts.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Colombo, Sri Lanka</p>
+                    <p><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sumith Auto Parts. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for automotive excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================
+         BACK TO TOP BUTTON
+    ======================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ========================
+         PRODUCT MODAL
+    ======================== -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProductModal()" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h3 id="modalTitle">Product Details</h3>
+                <p id="modalDesc">Product description goes here.</p>
+                <a href="#contact" class="btn btn-primary" onclick="closeProductModal()">
+                    <i class="fas fa-shopping-cart"></i> Inquire Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>'''
+
+with open('/mnt/agents/output/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("index.html created successfully!")
+print(f"File size: {len(html_content)} characters")
